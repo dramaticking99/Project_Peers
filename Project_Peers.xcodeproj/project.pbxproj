@@ -17,6 +17,12 @@
 		123942C32C0F4D1E00ED5AAB /* Project_PeersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942C22C0F4D1E00ED5AAB /* Project_PeersTests.swift */; };
 		123942CD2C0F4D1E00ED5AAB /* Project_PeersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942CC2C0F4D1E00ED5AAB /* Project_PeersUITests.swift */; };
 		123942CF2C0F4D1E00ED5AAB /* Project_PeersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942CE2C0F4D1E00ED5AAB /* Project_PeersUITestsLaunchTests.swift */; };
+		123942DF2C0F509A00ED5AAB /* ChatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942DE2C0F509A00ED5AAB /* ChatsTableViewController.swift */; };
+		123942E62C0F56CB00ED5AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123942B62C0F4D1E00ED5AAB /* LaunchScreen.storyboard */; };
+		123942E72C0F56CE00ED5AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123942AE2C0F4D1D00ED5AAB /* Main.storyboard */; };
+		123942EA2C0F57DA00ED5AAB /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123942E92C0F57DA00ED5AAB /* ChatCell.xib */; };
+		123942EB2C0F57DA00ED5AAB /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942E82C0F57DA00ED5AAB /* ChatCell.swift */; };
+		123942F22C0F61CA00ED5AAB /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942F12C0F61CA00ED5AAB /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,10 @@
 		123942C82C0F4D1E00ED5AAB /* Project_PeersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project_PeersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		123942CC2C0F4D1E00ED5AAB /* Project_PeersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_PeersUITests.swift; sourceTree = "<group>"; };
 		123942CE2C0F4D1E00ED5AAB /* Project_PeersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_PeersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		123942DE2C0F509A00ED5AAB /* ChatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewController.swift; sourceTree = "<group>"; };
+		123942E82C0F57DA00ED5AAB /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		123942E92C0F57DA00ED5AAB /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChatCell.xib; path = Project_Peers/View/Chat/ChatCell.xib; sourceTree = SOURCE_ROOT; };
+		123942F12C0F61CA00ED5AAB /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 		123942DB2C0F4D3B00ED5AAB /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				123942F02C0F610A00ED5AAB /* Chat */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -140,6 +151,7 @@
 		123942DC2C0F4D4200ED5AAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				123942E02C0F523F00ED5AAB /* Chat */,
 				123942AE2C0F4D1D00ED5AAB /* Main.storyboard */,
 				123942B62C0F4D1E00ED5AAB /* LaunchScreen.storyboard */,
 			);
@@ -149,9 +161,35 @@
 		123942DD2C0F4D4A00ED5AAB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				123942E12C0F524A00ED5AAB /* Chat */,
 				123942AC2C0F4D1D00ED5AAB /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		123942E02C0F523F00ED5AAB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				123942E82C0F57DA00ED5AAB /* ChatCell.swift */,
+				123942E92C0F57DA00ED5AAB /* ChatCell.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		123942E12C0F524A00ED5AAB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				123942DE2C0F509A00ED5AAB /* ChatsTableViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		123942F02C0F610A00ED5AAB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				123942F12C0F61CA00ED5AAB /* ChatModel.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				123942B52C0F4D1E00ED5AAB /* Assets.xcassets in Resources */,
+				123942EA2C0F57DA00ED5AAB /* ChatCell.xib in Resources */,
 				123942B82C0F4D1E00ED5AAB /* Base in Resources */,
+				123942E72C0F56CE00ED5AAB /* Main.storyboard in Resources */,
+				123942E62C0F56CB00ED5AAB /* LaunchScreen.storyboard in Resources */,
 				123942B02C0F4D1D00ED5AAB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +329,10 @@
 				123942AD2C0F4D1D00ED5AAB /* ViewController.swift in Sources */,
 				123942A92C0F4D1D00ED5AAB /* AppDelegate.swift in Sources */,
 				123942AB2C0F4D1D00ED5AAB /* SceneDelegate.swift in Sources */,
+				123942F22C0F61CA00ED5AAB /* ChatModel.swift in Sources */,
+				123942DF2C0F509A00ED5AAB /* ChatsTableViewController.swift in Sources */,
 				123942B32C0F4D1D00ED5AAB /* Project_Peers.xcdatamodeld in Sources */,
+				123942EB2C0F57DA00ED5AAB /* ChatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +522,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,6 +551,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
