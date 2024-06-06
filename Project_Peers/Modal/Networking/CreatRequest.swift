@@ -8,14 +8,18 @@
 import Foundation
 
 enum CreatRequest : Request {
+    
 
     case general(default : Bool)
+    case getChats(sender_Id: String)
     
-    typealias Response = String
+    typealias Response = Data
     typealias RequestError = NetworkError
     
     var baseURl: URL {
         switch self {
+        case .getChats:
+            return Config.baseURL
         case .general:
             fallthrough
         default:
@@ -26,6 +30,8 @@ enum CreatRequest : Request {
     
     var method: String {
         switch self {
+        case .getChats:
+            return "GET"
         case .general:
             fallthrough
         default:
@@ -35,6 +41,8 @@ enum CreatRequest : Request {
     
     var path: String {
         switch self {
+        case .getChats:
+            return "chat/getChats"
         case .general:
             fallthrough
         default:
@@ -42,12 +50,14 @@ enum CreatRequest : Request {
         }
     }
     
-    func parse(from object: Any) throws -> String {
+    func parse(from data: Data) throws -> Data {
         switch self {
+        case .getChats:
+            return data
         case .general:
             fallthrough
         default:
-            return "Test"
+            return "Test".data(using: .utf8)!
         }
     }
 

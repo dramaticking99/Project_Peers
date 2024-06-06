@@ -19,7 +19,7 @@ protocol Request {
     var headers: [String: String] { get }
     var body: Data? { get }
     
-    func parse(from object: Any) throws -> Response
+    func parse(from data: Data) throws -> Response
 }
 
 extension Request {

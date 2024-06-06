@@ -7,17 +7,19 @@
 
 import Foundation
 
-struct ChatModel {
-    var userId: String
-    var userName: String
-    var profileImageUrl: String
+
+struct ChatModel : Codable, Equatable {
+    var imageURL: String
+    var receiver_Id: String
+    var name: String
+    
 }
 
 extension ChatModel {
     static func getDummyData(_ count: Int)-> [ChatModel] {
         var outputArray : [ChatModel] = []
         for i in 0..<count {
-            let dummyModel = ChatModel(userId: "DummyUserId\(1)", userName: "DummyName\(i)", profileImageUrl: "DummyProfileImageUrl\(1)")
+            let dummyModel = ChatModel( imageURL: "DummyProfileImageUrl\(1)", receiver_Id: "DummyUserId\(1)", name: "DummyName\(i)")
             outputArray.append(dummyModel)
         }
         return outputArray

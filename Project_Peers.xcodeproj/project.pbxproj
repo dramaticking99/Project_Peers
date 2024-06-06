@@ -11,6 +11,8 @@
 		12031DC82C112184005B222C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12031DC72C112184005B222C /* Session.swift */; };
 		12031DCA2C112206005B222C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12031DC92C112206005B222C /* Error.swift */; };
 		12031DCD2C11276B005B222C /* CreatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12031DCC2C11276B005B222C /* CreatRequest.swift */; };
+		12031DCF2C1172B3005B222C /* ChatAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12031DCE2C1172B3005B222C /* ChatAPIManager.swift */; };
+		12031DD22C11747B005B222C /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12031DD12C11747B005B222C /* config.swift */; };
 		123942A92C0F4D1D00ED5AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942A82C0F4D1D00ED5AAB /* AppDelegate.swift */; };
 		123942AB2C0F4D1D00ED5AAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942AA2C0F4D1D00ED5AAB /* SceneDelegate.swift */; };
 		123942AD2C0F4D1D00ED5AAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123942AC2C0F4D1D00ED5AAB /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		12031DC72C112184005B222C /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		12031DC92C112206005B222C /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		12031DCC2C11276B005B222C /* CreatRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatRequest.swift; sourceTree = "<group>"; };
+		12031DCE2C1172B3005B222C /* ChatAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAPIManager.swift; sourceTree = "<group>"; };
+		12031DD12C11747B005B222C /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		123942A52C0F4D1D00ED5AAB /* Project_Peers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_Peers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123942A82C0F4D1D00ED5AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		123942AA2C0F4D1D00ED5AAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,14 @@
 				12031DCC2C11276B005B222C /* CreatRequest.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		12031DD02C117463005B222C /* Configration */ = {
+			isa = PBXGroup;
+			children = (
+				12031DD12C11747B005B222C /* config.swift */,
+			);
+			path = Configration;
 			sourceTree = "<group>";
 		};
 		1239429C2C0F4D1D00ED5AAB = {
@@ -162,6 +174,7 @@
 		123942DB2C0F4D3B00ED5AAB /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				12031DD02C117463005B222C /* Configration */,
 				12031DC42C111FB2005B222C /* Networking */,
 				123942F02C0F610A00ED5AAB /* Chat */,
 			);
@@ -208,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				123942F12C0F61CA00ED5AAB /* ChatModel.swift */,
+				12031DCE2C1172B3005B222C /* ChatAPIManager.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -352,8 +366,10 @@
 				12031DCA2C112206005B222C /* Error.swift in Sources */,
 				123942AB2C0F4D1D00ED5AAB /* SceneDelegate.swift in Sources */,
 				123942F22C0F61CA00ED5AAB /* ChatModel.swift in Sources */,
+				12031DD22C11747B005B222C /* config.swift in Sources */,
 				123942DF2C0F509A00ED5AAB /* ChatsTableViewController.swift in Sources */,
 				123942B32C0F4D1D00ED5AAB /* Project_Peers.xcdatamodeld in Sources */,
+				12031DCF2C1172B3005B222C /* ChatAPIManager.swift in Sources */,
 				12031DCD2C11276B005B222C /* CreatRequest.swift in Sources */,
 				12031DC62C111FDF005B222C /* Request.swift in Sources */,
 				123942EB2C0F57DA00ED5AAB /* ChatCell.swift in Sources */,
